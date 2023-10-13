@@ -1,3 +1,4 @@
+///類似傳統vue專案中的main.js，主入口
 import { createSSRApp, h } from 'vue'
 import PageLayout from './PageLayout.vue'
 

@@ -5,5 +5,10 @@
 </template>
 
 <script>
-export const title = 'Earth Countries'
+// export const title = 'Earth Countries'
+export const documentProps = {
+  // 此 標題 和 描述 將覆蓋預設值(靜態)
+  title: 'About SpaceX',
+  description: 'Our mission is to explore the galaxy.'
+}
 </script>

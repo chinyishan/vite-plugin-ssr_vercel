@@ -13,8 +13,13 @@ async function render(pageContext) {
   const app = createApp(pageContext)
   const appHtml = await renderToString(app)
 
+  console.log(pageContext, '_default.page.server');
+
   // See https://vite-plugin-ssr.com/head
-  const { documentProps } = pageContext
+  // 設置 <head> meta tags ，自訂匯出可在此處作為「pageContext.exports.documentProps」使用
+  const { documentProps } = pageContext.exports
+
+  // 預設值
   const title = documentProps?.title || 'Vite SSR app'
   const desc = documentProps?.description || 'App using Vite + vite-plugin-ssr'
 

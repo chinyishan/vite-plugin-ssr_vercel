@@ -6,6 +6,7 @@
       </a>
       <a class="navitem" href="/">Home</a>
       <a class="navitem" href="/about">About</a>
+      <a class="navitem" href="/product">Product</a>
     </div>
     <div class="content"><slot /></div>
   </div>
